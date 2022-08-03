@@ -8,6 +8,19 @@ body {
     font-family: "ROBOTO", sans-serif;
 }
 
+.sobre{
+    display: flex !important; 
+    align-items: center;
+    flex-direction: column;
+    width: 52vw;
+    margin-right: 70px;
+} 
+.sobre2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav,
 .slider {
     display: flex;
@@ -19,6 +32,7 @@ body {
     background-color: #1e1f26;
     text-align: center;
     padding: 0 2em;
+
 }
 
 .nav h1,
@@ -30,7 +44,7 @@ body {
     letter-spacing: 0.3rem;
     color: #03dac6;
     transition: all 0.3s ease;
-    z-index: 3;
+    z-index: 4;
 }
 
 h1:hover {
@@ -40,12 +54,14 @@ h1:hover {
 }
 
 .slider h2 {
-    font-size: 2vw;
+    font-size: 20px;
     letter-spacing: 0.3rem;
     font-family: "ROBOTO", sans-serif;
     font-weight: 300;
     color: #faebd7;
-    z-index: 4;
+    z-index: 4;  
+    margin-bottom: 40px;
+
 }
 
 h3.span {
@@ -65,6 +81,43 @@ span:hover {
 
 a {
     text-decoration: none;
+}
+
+button {
+    background: none;
+    border-radius: 7px;
+    color: white;
+    border: 2px solid #31266e;
+    width: 140px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    animation: button 1s;
+}
+
+@keyframes button {
+
+    0%,
+    20%,
+    60%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+
 }
 
 .nav-container {
@@ -136,7 +189,7 @@ a {
 
     .nav h2,
     .slider h2 {
-        font-size: 3vw;
+        font-size: 20px;
     }
 
     .nav-tab {
@@ -250,3 +303,102 @@ a {
 .loader span:nth-child(22) {
     -webkit-animation-delay: 2.1s;
 }
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+:root {
+    --card-height: 55vh;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
+.card {
+    background-image: linear-gradient(rgb(0 0 0 0), rgba(0, 0, 0, 0)), url(w.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: var(--card-width);
+    height: var(--card-height);
+    padding: 3px;
+    position: relative;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-size: 1.5em;
+    color: rgb(88 199 250 / 100%);
+    cursor: pointer;
+    font-family: cursive;
+    margin-bottom: 34px;
+    z-index: 0;
+}
+
+.card:hover {
+    transition: color 1s;
+    background-image: url(w.png);
+    color: rgb(88 199 250 / 0%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.card:hover:before,
+.card:hover:after {
+    animation: none;
+    opacity: 0;
+}
+
+
+.card::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index:-1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+.a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+}   
