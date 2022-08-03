@@ -316,7 +316,7 @@ button:hover {
 }
 
 .card {
-    background-image: linear-gradient(rgb(0 0 0 0), rgba(0, 0, 0, 0)), url(w.png);
+    background-image: url(w.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -344,6 +344,7 @@ button:hover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: 2s;
 
 }
 
@@ -352,9 +353,7 @@ button:hover {
     animation: none;
     opacity: 0;
 }
-
-
-.card::before {
+.card:before {
     content: "";
     width: 104%;
     height: 102%;
@@ -367,7 +366,7 @@ button:hover {
     animation: spin 2.5s linear infinite;
 }
 
-.card::after {
+.card:after {
     position: absolute;
     content: "";
     top: calc(var(--card-height) / 6);
@@ -381,7 +380,7 @@ button:hover {
     filter: blur(calc(var(--card-height) / 6));
     background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
     opacity: 1;
-    transition: opacity .5s;
+    transition: opacity 2s;
     animation: spin 2.5s linear infinite;
 }
 
