@@ -19,6 +19,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 99;
+
 }
 
 .nav,
@@ -304,216 +306,15 @@ button:hover {
     -webkit-animation-delay: 2.1s;
 }
 
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-}
-
-:root {
-    --card-height: 55vh;
-    --card-width: calc(var(--card-height) / 1.5);
-}
-
-.card {
-    background-image: url(w.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: var(--card-width);
-    height: var(--card-height);
-    padding: 3px;
-    position: relative;
-    border-radius: 6px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    display: flex;
-    font-size: 1.5em;
-    cursor: pointer;
-    font-family: cursive;
-    margin-bottom: 34px;
-}
-
-.card:hover {
-    transition: color 1s;
-    background-image: url(w.png);
-    color: rgb(88 199 250 / 0%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 2s;
-}
-/* 
-.card:hover:before,
-.card:hover:after {
-    animation: none;
-    opacity: 0;
-} */
-.card:before {
-    content: "";
-    width: 104%;
-    height: 102%;
-    border-radius: 8px;
-    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
-    position: absolute;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}
-
-.card:after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
-    opacity: 1;
-    transition: opacity 2s;
-    animation: spin 2.5s linear infinite;
-}
-
-h4 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #1e1f26;
-    opacity: 1;
-    font-size: 30px;
-    transition: opacity 2s;
-    overflow: hidden;
-    margin-bottom: 174%;
-}
-
-@keyframes spin {
-    0% {
-        --rotate: 0deg;
+@media(max-width:800px){
+    .sobre{
+        margin: 0;
     }
-
-    100% {
-        --rotate: 360deg;
+    .sobre2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99;
+        flex-direction: column;
     }
 }
-
-.a {
-    color: #ffffff;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-weight: bold;
-    margin-top: 10px;
-}   
-
-/* 
-@property --rotate {
-    syntax: "<angle>";
-    initial-value: 132deg;
-    inherits: false;
-}
-
-@keyframes spin {
-    0% {
-        --rotate: 0deg;
-    }
-
-    100% {
-        --rotate: 360deg;
-    }
-}
-
-:root {
-    --card-height: 365px;
-    --card-width: calc(var(--card-height) / 1.5);
-}
-
-.card {
-    background: url(w.png) center center no-repeat;
-    background-size: 365px;
-    width: 290px;
-    height: var(--card-height);
-    position: relative;
-    transition: background 0.8s;
-    border-radius: 6px;
-}
-.card:hover {
-    background: url("w.png") left top no-repeat;
-    background-size: 598px;
-}
-
-.card:before {
-    content: "";
-    width: 104%;
-    height: 102%;
-    border-radius: 8px;
-    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
-    position: absolute;
-    z-index: 0;
-    top: -1%;
-    left: -2%;
-    animation: spin 2.5s linear infinite;
-}
-
-.card:after {
-    position: absolute;
-    content: "";
-    top: calc(var(--card-height) / 6);
-    left: 0;
-    right: 0;
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    transform: scale(0.8);
-    filter: blur(calc(var(--card-height) / 6));
-    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
-    opacity: 1;
-    transition: opacity .5s;
-    animation: spin 2.5s linear infinite;
-}
-.card:hover:after{
-    background: none;
-    transition: opacity 2s;
-
-}
-
-.card:hover h4 {
-    opacity: 2;
-}
-
-.card:hover .fa {
-    opacity: 2;
-}
-.div-icons{
-    display: flex;
-    margin-left: 20px;
-}
-
-h4 {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #1e1f26;
-    opacity: 1;
-    font-size: 30px;
-    transition: opacity 2s;
-    overflow: hidden;
-}
-
-.fa {
-    opacity: 1;
-    transition: opacity 1s;
-}
-
-.icons {
-    position: absolute;
-    fill: #000;
-    color: #000;
-    height: 130px;
-    top: 226px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-} */
