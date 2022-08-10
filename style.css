@@ -8,6 +8,28 @@ body {
     font-family: "ROBOTO", sans-serif;
 }
 
+img{
+    width: 25px;
+}
+
+h3 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1e1f26;
+    opacity: 1;
+    font-size: 30px;
+    transition: opacity 2s;
+    overflow: hidden;
+}
+h4 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1e1f26;
+    opacity: 0;
+    margin-top: 20px;
+    font-size: 30px;
+    transition: opacity 3s;
+    overflow: hidden;
+}
+
 .sobre{
     display: flex !important; 
     align-items: center;
@@ -20,7 +42,6 @@ body {
     align-items: center;
     justify-content: center;
     z-index: 99;
-
 }
 
 .nav,
@@ -46,7 +67,7 @@ body {
     letter-spacing: 0.3rem;
     color: #03dac6;
     transition: all 0.3s ease;
-    z-index: 4;
+    z-index: 2;
 }
 
 h1:hover {
@@ -182,23 +203,6 @@ button:hover {
     z-index: auto;
 }
 
-@media (min-width: 800px) {
-
-    .nav h1,
-    .slider h1 {
-        font-size: 5vw;
-    }
-
-    .nav h2,
-    .slider h2 {
-        font-size: 20px;
-    }
-
-    .nav-tab {
-        font-size: 3vw;
-    }
-}
-
 .background {
     position: absolute;
     height: 100vh;
@@ -209,17 +213,90 @@ button:hover {
     z-index: 0;
 }
 
+
+.card {
+    background: url(img/WilliamPorto.jpg) center center no-repeat;
+    background-size: 365px;
+    width: 290px;
+    height: var(--card-height);
+    position: relative;
+    transition: background 0.8s;
+    border-radius: 6px;
+}
+.card:hover {
+    background: url("img/WilliamPorto.jpg") left top no-repeat;
+    background-size: 598px;
+}
+
+.card:before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    position: absolute;
+    z-index: -1;
+    top: -1%;
+    left: -2%;
+    animation: spin 2.5s linear infinite;
+}
+
+.card:after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(var(--rotate), #5ddcff, #3c67e3 43%, #4e00c2);
+    opacity: 1;
+    transition: opacity .5s;
+    animation: spin 2.5s linear infinite;
+}
+.card:hover:after{
+    background: none;
+    transition: opacity 2s;
+}
+.card:hover h4 {
+    opacity: 1;
+}
+
+.card:hover .fa {
+    opacity: 1;
+}
+.div-icons{
+    display: flex;
+    margin-left: 10px;
+}
+
+.fa {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.icons {
+    position: absolute;
+    fill: #000;
+    color: #000;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
 .loader span {
     color: #faebd7;
     text-shadow: 0 0 0 #faebd7;
     -webkit-animation: loading 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes loading {
-    to {
-        text-shadow: 20px 0 70px #7802ff;
-        color: #3002ff;
-    }
 }
 
 .loader span:nth-child(2) {
@@ -317,4 +394,47 @@ button:hover {
         z-index: 99;
         flex-direction: column;
     }
+
+    .nav h1,
+    .slider h1 {
+        font-size: 5vw;
+    }
+
+    .nav h2,
+    .slider h2 {
+        font-size: 20px;
+    }
+
+    .nav-tab {
+        font-size: 3vw;
+    }
 }
+
+@-webkit-keyframes loading {
+    to {
+        text-shadow: 20px 0 70px #7802ff;
+        color: #3002ff;
+    }
+}
+
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+}
+
+@keyframes spin {
+    0% {
+        --rotate: 0deg;
+    }
+
+    100% {
+        --rotate: 360deg;
+    }
+}
+
+:root {
+    --card-height: 365px;
+    --card-width: calc(var(--card-height) / 1.5);
+}
+
