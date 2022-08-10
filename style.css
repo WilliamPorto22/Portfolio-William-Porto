@@ -122,42 +122,36 @@ a {
     text-decoration: none;
 }
 
-button {
+.a {
     background: none;
     border-radius: 7px;
-    color: white;
+    color: #03dac6;
     border: 2px solid #31266e;
-    width: 160px;
-    height: 42px;
+    width: 229px;
+    height: 40px;
     font-size: 20px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
-    animation: button 1s;
+
+.a:hover {
+    border-radius: 7px;
+    color: #1e1f26;
+    background: #03dac6;
+    border:none;
+    width: 229px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 1s ease;
 }
 
-@keyframes button {
-
-    0%,
-    20%,
-    60%,
-    90% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-
-    50% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
-
-    70% {
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
-    }
-
-}
 
 .nav-container {
     display: flex;
@@ -217,6 +211,7 @@ button:hover {
     position: relative;
     transition: background 0.8s;
     border-radius: 6px;
+    margin-bottom: 80px;
 }
 .card:hover {
     background: url("img/WilliamPorto.jpg") left top no-repeat;
