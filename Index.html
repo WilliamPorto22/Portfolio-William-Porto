@@ -13,16 +13,15 @@
 
 <body translate="no">
 
-  <sectio class="nav">
+    <section class="nav ">
     <h1>WILLIAM PORTO</h1>
-    <h3 class="span loader"><span class="m">B</span><span class="m">E</span><span class="m">N</span><span
-        class="m">E</span><span class="m">F</span><span class="m">I</span><span class="m">T</span><span
-        class="m">S</span><span class="m">&nbsp;</span><span class="m">o</span><span class="m">f</span><span
-        class="m">&nbsp;</span><span class="m">T</span><span class="m">E</span><span class="m">C</span><span
-        class="m">H</span><span class="m">N</span><span class="m">O</span><span class="m">L</span><span
-        class="m">O</span><span class="m">G</span><span class="m">I</span><span class="m">E</span><span
-        class="m">S</span></h3>
-    <div class="nav-container"> 
+
+    <h3 class="span loader">
+      <span>D</span><span>E</span><span>S</span><span>E</span><span>N</span><span>V</span><span>O</span><span>L</span><span>V</span><span>E</span><span>D</span><span>O</span><span>R</span>
+      <span>F</span><span>R</span><span>O</span><span>N</span><span>T</span><span>-</span><span>E</span><span>N</span><span>D</span><span></span>
+    </h3>
+
+    <div class="nav-container">
       <a class="nav-tab" href="#SOBRE">SOBRE</a>
       <a class="nav-tab" href="#SKILLS">SKILLS</a>
       <a class="nav-tab" href="#tab-next">NEXT</a>
@@ -30,8 +29,9 @@
       <a class="nav-tab" href="#tab-deno">DENO</a>
       <span class="nav-tab-slider"> </span>
     </div>
-    <canvas class="background" width="841" height="419" style="width: 100%; height: 100%;"></canvas> 
-  </sectio>
+    <canvas class="background"></canvas>
+    
+  </section>
 
   <main class="main">
     <section class="slider" id="SOBRE">
@@ -48,25 +48,25 @@
 
         <div>
           <div class="card">
-            <div class="div-icons" >
-                <h4>William Porto</h4>
-                
-                <div class="icons">
-                    <a class="fa" href=""  >
-                        <img src="/Img/face.png"> </img>
-                    </a>
-                    <a class="fa" href="">
-                        <img src="/Img/git.jpg"> </img>
-                    </a>
-                    <a class="fa" href="">
-                        <img src="/Img/insta.jpg"> </img>
-                    </a>
-                    <a class="fa" href="">
-                        <img src="/Img/linked.png"> </img>
-                    </a> 
-                </div>
+            <div class="div-icons">
+              <h4>William Porto</h4>
+
+              <div class="icons">
+                <a class="fa" href="">
+                  <img src="/Img/face.png"> </img>
+                </a>
+                <a class="fa" href="">
+                  <img src="/Img/git.jpg"> </img>
+                </a>
+                <a class="fa" href="">
+                  <img src="/Img/insta.jpg"> </img>
+                </a>
+                <a class="fa" href="">
+                  <img src="/Img/linked.png"> </img>
+                </a>
+              </div>
             </div>
-        </div>
+          </div>
         </div>
     </section>
 
@@ -90,139 +90,139 @@
 
 
   <script
-  src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script id="rendered-js">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script id="rendered-js">
 
-  window.onload = function () {
-    Particles.init({
-      selector: ".background"
+    window.onload = function () {
+      Particles.init({
+        selector: ".background"
+      });
+
+    };
+    const particles = Particles.init({
+      selector: ".background",
+      color: ["#03dac6", "#3002ff", "#000000"],
+      connectParticles: true,
+      responsive: [
+        {
+          breakpoint: 768,
+          options: {
+            color: ["#faebd7", "#03dac6", "#7802ff;"],
+            maxParticles: 43,
+            connectParticles: false
+          }
+        }]
     });
 
-  };
-  const particles = Particles.init({
-    selector: ".background",
-    color: ["#03dac6", "#3002ff", "#000000"],
-    connectParticles: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        options: {
-          color: ["#faebd7", "#03dac6", "#7802ff;"],
-          maxParticles: 43,
-          connectParticles: false
+    class NavigationPage {
+      constructor() {
+        this.currentId = null;
+        this.currentTab = null;
+        this.tabContainerHeight = 70;
+        this.lastScroll = 0;
+        let self = this;
+        $(".nav-tab").click(function () {
+          self.onTabClick(event, $(this));
+        });
+        $(window).scroll(() => {
+          this.onScroll();
+        });
+        $(window).resize(() => {
+          this.onResize();
+        });
+      }
+
+      onTabClick(event, element) {
+        event.preventDefault();
+        let scrollTop =
+          $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
+        $("html, body").animate({ scrollTop: scrollTop }, 600);
+      }
+
+      onScroll() {
+        this.checkHeaderPosition();
+        this.findCurrentTabSelector();
+        this.lastScroll = $(window).scrollTop();
+      }
+
+      onResize() {
+        if (this.currentId) {
+          this.setSliderCss();
         }
-      }]
-  });
-
-  class NavigationPage {
-    constructor() {
-      this.currentId = null;
-      this.currentTab = null;
-      this.tabContainerHeight = 70;
-      this.lastScroll = 0;
-      let self = this;
-      $(".nav-tab").click(function () {
-        self.onTabClick(event, $(this));
-      });
-      $(window).scroll(() => {
-        this.onScroll();
-      });
-      $(window).resize(() => {
-        this.onResize();
-      });
-    }
-
-    onTabClick(event, element) {
-      event.preventDefault();
-      let scrollTop =
-        $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
-      $("html, body").animate({ scrollTop: scrollTop }, 600);
-    }
-
-    onScroll() {
-      this.checkHeaderPosition();
-      this.findCurrentTabSelector();
-      this.lastScroll = $(window).scrollTop();
-    }
-
-    onResize() {
-      if (this.currentId) {
-        this.setSliderCss();
       }
-    }
 
-    checkHeaderPosition() {
-      const headerHeight = 75;
-      if ($(window).scrollTop() > headerHeight) {
-        $(".nav-container").addClass("nav-container--scrolled");
-      } else {
-        $(".nav-container").removeClass("nav-container--scrolled");
-      }
-      let offset =
-        $(".nav").offset().top +
-        $(".nav").height() -
-        this.tabContainerHeight -
-        headerHeight;
-      if (
-        $(window).scrollTop() > this.lastScroll &&
-        $(window).scrollTop() > offset) {
-        $(".nav-container").addClass("nav-container--move-up");
-        $(".nav-container").removeClass("nav-container--top-first");
-        $(".nav-container").addClass("nav-container--top-second");
-      } else if (
-        $(window).scrollTop() < this.lastScroll &&
-        $(window).scrollTop() > offset) {
-        $(".nav-container").removeClass("nav-container--move-up");
-        $(".nav-container").removeClass("nav-container--top-second");
-        $(".nav-container-container").addClass("nav-container--top-first");
-      } else {
-        $(".nav-container").removeClass("nav-container--move-up");
-        $(".nav-container").removeClass("nav-container--top-first");
-        $(".nav-container").removeClass("nav-container--top-second");
-      }
-    }
-
-    findCurrentTabSelector(element) {
-      let newCurrentId;
-      let newCurrentTab;
-      let self = this;
-      $(".nav-tab").each(function () {
-        let id = $(this).attr("href");
-        let offsetTop = $(id).offset().top - self.tabContainerHeight;
-        let offsetBottom =
-          $(id).offset().top + $(id).height() - self.tabContainerHeight;
+      checkHeaderPosition() {
+        const headerHeight = 75;
+        if ($(window).scrollTop() > headerHeight) {
+          $(".nav-container").addClass("nav-container--scrolled");
+        } else {
+          $(".nav-container").removeClass("nav-container--scrolled");
+        }
+        let offset =
+          $(".nav").offset().top +
+          $(".nav").height() -
+          this.tabContainerHeight -
+          headerHeight;
         if (
-          $(window).scrollTop() > offsetTop &&
-          $(window).scrollTop() < offsetBottom) {
-          newCurrentId = id;
-          newCurrentTab = $(this);
+          $(window).scrollTop() > this.lastScroll &&
+          $(window).scrollTop() > offset) {
+          $(".nav-container").addClass("nav-container--move-up");
+          $(".nav-container").removeClass("nav-container--top-first");
+          $(".nav-container").addClass("nav-container--top-second");
+        } else if (
+          $(window).scrollTop() < this.lastScroll &&
+          $(window).scrollTop() > offset) {
+          $(".nav-container").removeClass("nav-container--move-up");
+          $(".nav-container").removeClass("nav-container--top-second");
+          $(".nav-container-container").addClass("nav-container--top-first");
+        } else {
+          $(".nav-container").removeClass("nav-container--move-up");
+          $(".nav-container").removeClass("nav-container--top-first");
+          $(".nav-container").removeClass("nav-container--top-second");
         }
-      });
-      if (this.currentId != newCurrentId || this.currentId === null) {
-        this.currentId = newCurrentId;
-        this.currentTab = newCurrentTab;
-        this.setSliderCss();
+      }
+
+      findCurrentTabSelector(element) {
+        let newCurrentId;
+        let newCurrentTab;
+        let self = this;
+        $(".nav-tab").each(function () {
+          let id = $(this).attr("href");
+          let offsetTop = $(id).offset().top - self.tabContainerHeight;
+          let offsetBottom =
+            $(id).offset().top + $(id).height() - self.tabContainerHeight;
+          if (
+            $(window).scrollTop() > offsetTop &&
+            $(window).scrollTop() < offsetBottom) {
+            newCurrentId = id;
+            newCurrentTab = $(this);
+          }
+        });
+        if (this.currentId != newCurrentId || this.currentId === null) {
+          this.currentId = newCurrentId;
+          this.currentTab = newCurrentTab;
+          this.setSliderCss();
+        }
+      }
+
+      setSliderCss() {
+        let width = 0;
+        let left = 0;
+        if (this.currentTab) {
+          width = this.currentTab.css("width");
+          left = this.currentTab.offset().left;
+        }
+        $(".nav-tab-slider").css("width", width);
+        $(".nav-tab-slider").css("left", left);
       }
     }
 
-    setSliderCss() {
-      let width = 0;
-      let left = 0;
-      if (this.currentTab) {
-        width = this.currentTab.css("width");
-        left = this.currentTab.offset().left;
-      }
-      $(".nav-tab-slider").css("width", width);
-      $(".nav-tab-slider").css("left", left);
-    }
-  }
 
+    new NavigationPage();
 
-  new NavigationPage();
-
-</script>
+  </script>
 
 </body>
 
