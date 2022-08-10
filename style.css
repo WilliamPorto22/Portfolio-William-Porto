@@ -9,7 +9,11 @@ body {
 }
 
 img{
-    width: 25px;
+    width: 28px;
+}
+img:hover{
+    width: 33px;
+    transition: 0,5s;
 }
 
 h3 {
