@@ -119,10 +119,8 @@ span:hover {
 }
 
 video{
-    width:100%;  
-}
-video:hover{
-    border-radius: 10px;
+    width: 390px;
+    height: 290px;
 }
 
 a {
@@ -130,20 +128,19 @@ a {
 }
 
 .a {
+    color: #03dac6;
     background: none;
     border-radius: 7px;
-    color: #03dac6;
-    border: 2px solid #31266e;
-    width: 229px;
+    border: 3px solid #31266e;
+    width: 174px;
     height: 40px;
     font-size: 20px;
+    padding: 3px 0px 1px 0px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3px;
 }
-
 
 .a:hover {
     color: #1e1f26;
@@ -151,10 +148,7 @@ a {
     border:none;
     justify-content: center;
     transition: all 1s ease;
-}
-
-.a-button{
-
+    font-weight: 500;
 }
 
 .display-center{
