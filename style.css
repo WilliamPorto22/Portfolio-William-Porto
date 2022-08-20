@@ -118,6 +118,13 @@ span:hover {
     font-size: 2.2vw;
 }
 
+video{
+    width:100%;  
+}
+video:hover{
+    border-radius: 10px;
+}
+
 a {
     text-decoration: none;
 }
@@ -151,7 +158,6 @@ a {
     display: flex;
     transition: all 1s ease;
 }
-
 
 .nav-container {
     display: flex;
@@ -209,10 +215,11 @@ a {
     width: 290px;
     height: var(--card-height);
     position: relative;
-    transition: background 0.8s;
+    transition: 0.8s;
     border-radius: 6px;
     margin-bottom: 80px;
 }
+
 .card:hover {
     background: url("img/WilliamPorto.jpg") left top no-repeat;
     background-size: 598px;
@@ -269,6 +276,37 @@ a {
     transition: opacity 1s;
 }
 
+.card-projetos{
+    margin: 10px;
+    background-color: #424242;
+    width: 390px;
+    color: #5ddcff;
+    font-size: 20px;
+    font-weight: 700;
+    height: 290px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    /* padding: 0px 5px 0px 5px; */
+}
+
+.card-projetos:hover{
+    transition: 0.8s;
+    width: 400px;
+    height: 300px;
+    border: solid;
+    border-color: #5ddcff;
+    border-radius:10px;
+}
+.section-projetos{
+    display: flex;
+
+}
+/* 
+:hover{
+    display:none;
+} */
+
 .icons {
     position: absolute;
     fill: #000;
@@ -281,7 +319,6 @@ a {
     align-items: center;
     justify-content: space-around;
 }
-
 
 .loader span {
     color: #faebd7;
