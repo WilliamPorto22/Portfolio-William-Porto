@@ -112,6 +112,10 @@ h3.span {
     margin-bottom: 30px;
 }
 
+p {
+    margin-top:10px;
+}
+
 span:hover {
     color: #3002ff;
     font-weight: 500;
@@ -119,8 +123,11 @@ span:hover {
 }
 
 video{
-    width: 390px;
-    height: 290px;
+    width: 387px;
+}
+
+video:hover{
+    border-radius: 7px;
 }
 
 a {
@@ -151,12 +158,34 @@ a {
     font-weight: 500;
 }
 
+.a-button{
+    color: transparent;
+    background-color:transparent
+}
+
+.a-button:hover{
+    color: #1e1f26;
+    background: #03dac6;
+    border-radius: 7px;
+    width: 174px;
+    height: 40px;
+    font-size: 20px;
+    padding: 3px 0px 1px 0px;
+    cursor: pointer;
+    transition:  1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .display-center{
+    margin: 4px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -275,35 +304,37 @@ a {
 }
 
 .card-projetos{
-    margin: 10px;
-    background-color: #424242;
-    width: 390px;
-    color: #5ddcff;
-    font-size: 20px;
-    font-weight: 700;
-    height: 290px;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    /* padding: 0px 5px 0px 5px; */
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:none;
+    height: 225px;
+    color: transparent;
+    background-color: transparent;
 }
 
 .card-projetos:hover{
-    transition: 0.8s;
-    width: 400px;
-    height: 300px;
-    border: solid;
-    border-color: #5ddcff;
-    border-radius:10px;
+    transition: all 1.2s ease 0s;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 20px;
+    background-color: rgb(66, 66, 66);
+    width: 393px;
+    height: 330px;
+    color: rgb(93, 220, 255);
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 3px solid rgb(93, 220, 255);
+    border-radius: 10px;
 }
+
 .section-projetos{
     display: flex;
-
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
 }
-/* 
-:hover{
-    display:none;
-} */
 
 .icons {
     position: absolute;
