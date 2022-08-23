@@ -123,7 +123,8 @@ span:hover {
 }
 
 video{
-    width: 387px;
+    width: 444px;
+    border-radius: 10px;
 }
 
 video:hover{
@@ -307,10 +308,12 @@ a {
     display:flex;
     flex-direction: column;
     align-items: center;
-    border:none;
-    height: 225px;
+    height: 255px;
     color: transparent;
     background-color: transparent;
+    cursor: pointer;
+    border: 3px solid rgb(93, 220, 255);
+    border-radius: 10px;
 }
 
 .card-projetos:hover{
@@ -319,14 +322,11 @@ a {
     margin-right: 3px;
     margin-bottom: 20px;
     background-color: rgb(66, 66, 66);
-    width: 393px;
-    height: 330px;
+    width: 454px;
+    height: 366px;
     color: rgb(93, 220, 255);
     font-size: 20px;
     font-weight: 700;
-    cursor: pointer;
-    border: 3px solid rgb(93, 220, 255);
-    border-radius: 10px;
 }
 
 .section-projetos{
@@ -334,6 +334,8 @@ a {
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .icons {
