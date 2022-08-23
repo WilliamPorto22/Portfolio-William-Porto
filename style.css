@@ -24,6 +24,7 @@ h3 {
     transition: opacity 2s;
     overflow: hidden;
 }
+
 h4 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #1e1f26;
@@ -40,8 +41,8 @@ canvas{
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: auto;
-    width: 841px;
+    z-index: 1;
+    width: 941px;
     height:419px; 
 }
 
