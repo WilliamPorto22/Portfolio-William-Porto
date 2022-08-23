@@ -9,7 +9,7 @@ const particles = Particles.init({
     connectParticles: true,
     responsive: [
         {
-            breakpoint: 868,
+            breakpoint: 600,
             options: {
                 color: ["#faebd7", "#03dac6", "#7802ff;"],
                 maxParticles: 43,
