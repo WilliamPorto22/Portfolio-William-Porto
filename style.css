@@ -138,7 +138,7 @@ a {
 
 .a {
     transition: all 1s ease;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 10px;
     color: #03dac6;
     background: none;
@@ -325,7 +325,7 @@ a {
     margin-left: 3px;
     margin-right: 3px;
     margin-bottom: 20px;
-    background-color: rgb(66, 66, 66);
+    background-color: rgba(77, 122, 126, 0.884);
     width: 680px;
     height: 439px;
     color: rgb(93, 220, 255);
