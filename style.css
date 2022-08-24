@@ -91,14 +91,13 @@ h1:hover {
 }
 
 h2 {
-    font-size: 20px;
-    letter-spacing: 0.3rem;
+    font-size: 24px;
+    letter-spacing: 2px;
     font-family: "ROBOTO", sans-serif;
-    font-weight: 300;
+    font-weight: 250;
     color: #faebd7;
-    z-index: 4;  
-    margin-bottom: 80px;
-
+    z-index: 4;
+    margin-right: 20px;
 }
 
 h3.span {
@@ -123,13 +122,13 @@ span:hover {
 
 video{
     transition: all 1.2s ease 0s;
-    width: 600px;
+    width: 500px;
     border-radius: 10px;
 }
 
 video:hover{
     border-radius: 7px;
-    width: 670px;
+    width: 570px;
 }
 
 .whats {
@@ -156,17 +155,17 @@ a {
 }
 
 .a {
-    transition: all 1s ease;
-    margin-top: 15px;
+    transition: all 1s ease 0s;
+    margin-top: 70px;
     margin-bottom: 10px;
-    color: #03dac6;
+    color: rgb(3, 218, 198);
     background: none;
     border-radius: 7px;
-    border: 3px solid #31266e;
+    border: 3px solid rgb(49, 38, 110);
     width: 174px;
     height: 40px;
     font-size: 20px;
-    padding: 3px 0px 1px 0px;
+    padding: 3px 0px 1px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -331,8 +330,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 332px;
-    width: 608px;
+    height: 277px;
+    width: 508px;
     color: transparent;
     background-color: transparent;
     cursor: pointer;
@@ -341,12 +340,9 @@ a {
 }
 
 .card-projetos:hover{
-    margin-left: 3px;
-    margin-right: 3px;
-    margin-bottom: 20px;
     background-color: rgba(77, 122, 126, 0.884);
-    width: 680px;
-    height: 439px;
+    width: 580px;
+    height: 386px;
     color: rgb(93, 220, 255);
     font-size: 20px;
     font-weight: 700;
