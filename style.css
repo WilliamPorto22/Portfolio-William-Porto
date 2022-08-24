@@ -132,6 +132,25 @@ video:hover{
     width: 670px;
 }
 
+.whats {
+    height: 85px;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    margin-right: 14px;
+}
+
+.img-whats{
+    transition: all 0.4s ease 0s;
+    height: 80px;
+    width: 80px;
+}
+
+.img-whats:hover{
+    height: 87px;
+    width: 87px;
+}
+
 a {
     text-decoration: none;
 }
