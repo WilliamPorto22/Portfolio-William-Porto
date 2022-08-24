@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    display: flex;
+    margin-top: 10px;
+    font-size: 52px;
+    color: rgb(247, 238, 238);
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section {
+    background-image: url(fundo2.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.img-bateria {
+    width: 1000px;
+    height: 708px;
+    background-image: url(Bateria2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+}
+.botaoa{   
+    display: flex;
+    justify-content: center;
+    color: #0c0c0c;
+    font-size: calc(3vw + 13px);
+    user-select: none;
+    height: 68px;
+    width: 56px;
+    margin-top: 464px;
+    margin-left: 93px;
+    cursor: pointer;
+}
+
+.botaos{   
+    display: flex;
+    justify-content: center;
+    color: #0c0c0c;
+    font-size: calc(3vw + 13px);
+    height: 68px;
+    width: 56px;
+    margin-top: 427px;
+    margin-left: 155px;
+    cursor: pointer;
+}
+
+.botaod{   
+    display: flex;
+    justify-content: center;
+    color: #0c0c0c;
+    font-size: calc(3vw + 13px);
+    user-select: none;
+    height: 68px;
+    width: 56px;
+    margin-top: 233px;
+    cursor: pointer;
+}
+
+.botaoh{   
+    display: flex;
+    justify-content: center;
+    color: #0c0c0c;
+    font-size: calc(3vw + 13px);
+    height: 68px;
+    width: 56px;
+    user-select: none;
+    margin-top: 233px;
+    margin-left: 138px;
+    cursor: pointer;
+}
+
+.botaoj{   
+    display: flex;
+    justify-content: center;
+    color: #0c0c0c;
+    font-size: calc(3vw + 13px);
+    user-select: none;
+    height: 68px;
+    width: 56px;
+    margin-top: 423px;
+    margin-left: 140px;
+    cursor: pointer;
+}
+.botaok{   
+    display: flex;
+    justify-content: center;
+    color: #0c0c0c;
+    font-size: calc(3vw + 13px);
+    user-select: none;
+    height: 68px;
+    width: 56px;
+    margin-top: 135px;
+    margin-left: -60px;
+    cursor: pointer;
+}
+
+.active{
+    transform: scale(1.3);
+    border-color: #060606;
+    box-shadow: 0 0 50px #000000;
+    
+}
