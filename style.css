@@ -8,12 +8,13 @@ body {
     font-family: "ROBOTO", sans-serif;
 }
 
-img{
+img {
     width: 28px;
 }
-img:hover{
+
+img:hover {
     width: 33px;
-    transition: 0,5s;
+    transition: 0, 5s;
 }
 
 h3 {
@@ -35,7 +36,7 @@ h4 {
     overflow: hidden;
 }
 
-canvas{  
+canvas {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -44,15 +45,15 @@ canvas{
     z-index: 1;
 }
 
-.sobre{
-    display: flex !important; 
+.sobre {
+    display: flex !important;
     align-items: center;
     flex-direction: column;
     width: 52vw;
     margin-right: 70px;
-} 
+}
 
-.sobre2{
+.sobre2 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +112,7 @@ h3.span {
 }
 
 p {
-    margin-top:10px;
+    margin-top: 10px;
 }
 
 span:hover {
@@ -120,13 +121,13 @@ span:hover {
     font-size: 2.2vw;
 }
 
-video{
+video {
     transition: all 1.2s ease 0s;
     width: 500px;
     border-radius: 10px;
 }
 
-video:hover{
+video:hover {
     border-radius: 7px;
     width: 570px;
 }
@@ -139,13 +140,13 @@ video:hover{
     margin-right: 14px;
 }
 
-.img-whats{
+.img-whats {
     transition: all 0.4s ease 0s;
     height: 80px;
     width: 80px;
 }
 
-.img-whats:hover{
+.img-whats:hover {
     height: 87px;
     width: 87px;
 }
@@ -175,17 +176,17 @@ a {
 .a:hover {
     color: #1e1f26;
     background: #03dac6;
-    border:none;
+    border: none;
     justify-content: center;
     font-weight: 500;
 }
 
-.a-button{
+.a-button {
     color: transparent;
-    background-color:transparent
+    background-color: transparent
 }
 
-.a-button:hover{
+.a-button:hover {
     color: #1e1f26;
     background: #03dac6;
     border-radius: 7px;
@@ -194,18 +195,17 @@ a {
     font-size: 20px;
     padding: 3px 0px 1px 0px;
     cursor: pointer;
-    transition:  1s;
+    transition: 1s;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.display-center{
-    margin: 4px; 
+.display-center {
+    margin: 4px;
     display: flex;
-    flex-direction: column;
+    flex-flow: column wrap;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .nav-container {
@@ -304,10 +304,12 @@ a {
     transition: opacity .5s;
     animation: spin 2.5s linear infinite;
 }
-.card:hover:after{
+
+.card:hover:after {
     background: none;
     transition: opacity 2s;
 }
+
 .card:hover h4 {
     opacity: 1;
 }
@@ -315,7 +317,8 @@ a {
 .card:hover .fa {
     opacity: 1;
 }
-.div-icons{
+
+.div-icons {
     display: flex;
     margin-left: 10px;
 }
@@ -325,7 +328,7 @@ a {
     transition: opacity 1s;
 }
 
-.card-projetos{
+.card-projetos {
     transition: all 1.2s ease 0s;
     display: flex;
     flex-direction: column;
@@ -339,7 +342,7 @@ a {
     border-radius: 11px;
 }
 
-.card-projetos:hover{
+.card-projetos:hover {
     background-color: rgba(77, 122, 126, 0.884);
     width: 580px;
     height: 386px;
@@ -348,10 +351,10 @@ a {
     font-weight: 700;
 }
 
-.section-projetos{
+.section-projetos {
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
     width: 100%;
     height: 55%;
@@ -460,11 +463,12 @@ a {
     -webkit-animation-delay: 2.1s;
 }
 
-@media(max-width:800px){
-    .sobre{
+@media(max-width:800px) {
+    .sobre {
         margin: 0;
     }
-    .sobre2{
+
+    .sobre2 {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -514,4 +518,3 @@ a {
     --card-height: 365px;
     --card-width: calc(var(--card-height) / 1.5);
 }
-
