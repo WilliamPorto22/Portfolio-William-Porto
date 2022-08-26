@@ -30,8 +30,8 @@ h4 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #1e1f26;
     opacity: 0;
-    margin-top: 20px;
-    font-size: 30px;
+    margin-top: 20px !important;
+    font-size: 30px !important;
     transition: opacity 3s;
     overflow: hidden;
 }
@@ -60,6 +60,37 @@ canvas {
     z-index: 99;
 }
 
+.video-carrossel{
+    margin-top: 30px;
+    width: 100% ;
+    height: 500px ;
+}
+
+.a-carrossel{
+    transition: all 1s ease 0s;
+    color: #1e1f26;
+    background: #03dac6;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    width: 150px;
+    height: 32px;
+    font-size: 20px;
+    padding: 3px 0px 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    font-weight: 500;
+}
+
+.a-carrossel:hover {
+    border: none;
+    width: 155px;
+    height: 37px; 
+    color: #1e1f26;
+}
+
 .nav,
 .slider {
     display: flex;
@@ -70,13 +101,12 @@ canvas {
     position: relative;
     background-color: #1e1f26;
     text-align: center;
-    padding: 0 2em;
 }
 
 .nav h1,
 .slider h1 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 6vw;
+    font-size: 5vw !important;
     margin-bottom: 10px;
     padding-bottom: 0.5rem;
     letter-spacing: 0.3rem;
@@ -92,7 +122,7 @@ h1:hover {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 24px !important;
     letter-spacing: 2px;
     font-family: "ROBOTO", sans-serif;
     font-weight: 250;
@@ -123,13 +153,13 @@ span:hover {
 
 video {
     transition: all 1.2s ease 0s;
-    width: 500px;
+    width: 100%;
     border-radius: 10px;
 }
 
 video:hover {
     border-radius: 7px;
-    width: 570px;
+    width:90%;
 }
 
 .whats {
@@ -201,13 +231,6 @@ a {
     justify-content: center;
 }
 
-.display-center {
-    margin: 4px;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
 .nav-container {
     display: flex;
     flex-direction: row;
@@ -262,7 +285,7 @@ a {
     background: url(img/WilliamPorto.jpg) center center no-repeat;
     background-size: 365px;
     width: 290px;
-    height: var(--card-height);
+    height: var(--card-height) !important;
     position: relative;
     transition: 0.8s;
     border-radius: 6px;
@@ -326,38 +349,6 @@ a {
 .fa {
     opacity: 0;
     transition: opacity 1s;
-}
-
-.card-projetos {
-    transition: all 1.2s ease 0s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 277px;
-    width: 508px;
-    color: transparent;
-    background-color: transparent;
-    cursor: pointer;
-    border: 4px solid rgb(93, 220, 255);
-    border-radius: 11px;
-}
-
-.card-projetos:hover {
-    background-color: rgba(77, 122, 126, 0.884);
-    width: 580px;
-    height: 386px;
-    color: rgb(93, 220, 255);
-    font-size: 20px;
-    font-weight: 700;
-}
-
-.section-projetos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 55%;
 }
 
 .icons {
