@@ -19,14 +19,14 @@ img:hover {
 }
 
 h2 {
-    font-size: 24px !important;
-    letter-spacing: 2px;
+    font-size: 20px !important;
+    letter-spacing: 1px;
     font-family: "ROBOTO", sans-serif;
     font-weight: 250 !important;
     color: #faebd7;
     z-index: 4;
     margin-right: 20px;
-    margin-bottom: 0px!important;
+    margin-bottom: 0px !important;
 }
 
 h3 {
@@ -48,7 +48,7 @@ h4 {
     overflow: hidden;
 }
 
-h5{
+h5 {
     display: flex;
     align-items: center;
     text-align: center;
@@ -66,7 +66,7 @@ canvas {
     z-index: 1;
 }
 
-.alinhar-itens{
+.alinhar-itens {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -81,7 +81,7 @@ canvas {
     margin-right: 70px;
 }
 
-li{
+li {
     display: flex;
     align-items: center;
     text-align: center;
@@ -96,18 +96,18 @@ li{
     z-index: 99;
 }
 
-.video-carrossel{
+.video-carrossel {
     margin-top: 30px;
-    width: 90% ;
-    height: 500px ;
+    width: 90%;
+    height: 500px;
 }
 
-.a-carrossel{
+.a-carrossel {
     transition: all 1s ease 0s;
     color: #1e1f26;
     background: #03dac6;
-    border-radius: 10px;
-    border: 2px solid #000000;
+    border-radius: 8px;
+    border: 1px solid #000000;
     width: 150px;
     height: 32px;
     font-size: 20px;
@@ -122,12 +122,12 @@ li{
     background: #04aa99;
 }
 
-.a-carrossel1{
+.a-carrossel1 {
     transition: all 1s ease 0s;
     color: #1e1f26;
     background: #03dac6;
     border-radius: 8px;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     width: 133px;
     font-size: 20px;
     cursor: pointer;
@@ -144,7 +144,8 @@ li{
     background: #04aa99;
 }
 
-.texto-carrossel{
+.texto-carrossel {
+    margin-bottom: 10px;
     padding-bottom: 2.5rem;
     color: #03dac6;
     text-align: center;
@@ -152,7 +153,7 @@ li{
     align-items: center;
 }
 
-.home{
+.home {
     z-index: 98;
 }
 
@@ -169,6 +170,28 @@ li{
     margin-bottom: 0;
     list-style: none;
     z-index: 999;
+}
+
+.section-sobre {
+    margin-top: 50px;
+    margin-bottom:50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+}
+
+.section-sobre h1 {
+    margin-top: 30px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 5vw !important;
+    margin-bottom: 0px !important;
+    padding-bottom: 0.5rem;
+    letter-spacing: 0.3rem;
+    color: #03dac6;
+    transition: all 0.3s ease;
+    z-index: 2;
+    user-select: none;
 }
 
 .nav,
@@ -226,7 +249,7 @@ video {
 
 video:hover {
     border-radius: 7px;
-    width:90%;
+    width: 90%;
 }
 
 .whats {
@@ -254,7 +277,7 @@ a {
 
 .a {
     transition: all 1s ease 0s;
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 10px;
     color: rgb(3, 218, 198);
     background: none;
@@ -413,7 +436,7 @@ a {
     margin-left: 10px;
 }
 
-.centralizar-formacao{
+.centralizar-formacao {
     justify-content: space-around;
     width: 100%;
     height: 410px;
@@ -543,7 +566,7 @@ a {
     .nav h1,
     .slider h1 {
         font-size: 4vw;
-    
+
     }
 
     .nav h2,
