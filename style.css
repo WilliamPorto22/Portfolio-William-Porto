@@ -40,8 +40,10 @@ h5{
     display: flex;
     align-items: center;
     text-align: center;
+    margin-top: 20px !important;
     font-size: 30px !important;
     color: rgb(135, 179, 179);
+
 }
 
 canvas {
@@ -98,32 +100,25 @@ li{
     width: 150px;
     height: 32px;
     font-size: 20px;
-    padding: 3px 0px 3px;
+    padding: 4px 34px 4px;
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 250px;
     font-weight: 500;
 }
 
 .a-carrossel:hover {
     border: none;
-    width: 155px;
-    height: 37px; 
     color: #1e1f26;
+    background: #04aa99;
 }
 
 .a-carrossel1{
     transition: all 1s ease 0s;
     color: #1e1f26;
     background: #03dac6;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 2px solid #000000;
-    width: 150px;
-    height: 32px;
+    width: 133px;
     font-size: 20px;
-    padding: 3px 0px 3px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -135,14 +130,21 @@ li{
 .a-carrossel1:hover {
     border: none;
     color: #1e1f26;
+    background: #04aa99;
+}
+
+.texto-carrossel{
+    padding-bottom: 2.5rem;
+    color: #03dac6;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav,
 .slider {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     position: relative;
     background-color: #1e1f26;
@@ -393,10 +395,9 @@ a {
 }
 
 .centralizar-formacao{
-    display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 450px;
+    height: 410px;
 }
 
 .fa {
@@ -522,7 +523,7 @@ a {
 
     .nav h1,
     .slider h1 {
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .nav h2,
