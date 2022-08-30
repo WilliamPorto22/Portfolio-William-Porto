@@ -141,6 +141,25 @@ li{
     align-items: center;
 }
 
+.home{
+    z-index: 98;
+}
+
+.nav {
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    background-color: #1e1f26;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    z-index: 999;
+}
+
 .nav,
 .slider {
     display: flex;
@@ -161,6 +180,7 @@ li{
     color: #03dac6;
     transition: all 0.3s ease;
     z-index: 2;
+    user-select: none;
 }
 
 h1:hover {
@@ -187,6 +207,7 @@ h3.span {
     color: #faebd7;
     z-index: 4;
     margin-bottom: 30px;
+    user-select: none;
 }
 
 p {
@@ -524,6 +545,7 @@ a {
     .nav h1,
     .slider h1 {
         font-size: 4vw;
+    
     }
 
     .nav h2,
