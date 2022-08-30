@@ -55,6 +55,7 @@ h5 {
     margin-top: 20px !important;
     font-size: 30px !important;
     color: rgb(135, 179, 179);
+    justify-content: center;
 }
 
 canvas {
@@ -64,13 +65,6 @@ canvas {
     left: 0;
     right: 0;
     z-index: 1;
-}
-
-.alinhar-itens {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .sobre {
@@ -392,6 +386,39 @@ a {
     justify-content: space-around;
     width: 100%;
     height: 410px;
+}
+
+.section-formacao {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card-formacao{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 33px;
+}
+
+.texto-formacao {
+    height: 220px;
+}
+
+.borda-formacao{
+    background-color: rgb(65 181 72);
+    height: 3px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.formacao-itens-text{
+    color: #03dac6;
+    width: 310px;
+    font-size: 20px;
 }
 
 .fa {
