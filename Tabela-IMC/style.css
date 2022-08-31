@@ -1,7 +1,5 @@
 body {
     margin: 0px;
-    font-size: 15px;
-    font-family: 'Amatic SC', sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -63,6 +61,7 @@ button{
     background-color: #40b422;
     position: absolute;
     cursor: pointer;
+    user-select: none;
     border: 1px solid transparent;
     border-radius: 16px;
     margin-top: 244px;
@@ -78,8 +77,9 @@ button:hover {
 .container {
     display: flex;
     align-items: center;
-    height: 525px;
-    width: 465px;
+    height: 515px;
+    width: 458px;
+    margin-bottom: 10px;
     border-radius: 10px;
     background: rgb(21 82 27 / 95%);
     flex-direction: column;
@@ -116,7 +116,6 @@ button:hover {
     background-color: rgb(30 34 30 / 68%);
     padding: 12px 0px;
     width: 100vw;
-    height: 20px;
     margin-bottom: 0px;
     display: flex;
     margin-top: -3px;

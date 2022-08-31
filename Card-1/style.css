@@ -31,7 +31,7 @@ img:hover{
 }
 
 .card {
-    background: url(/Img/WilliamPorto.jpg) center center no-repeat;
+    background: url(Img/WilliamPorto.jpg) center center no-repeat;
     background-size: 365px;
     width: 290px;
     height: var(--card-height);
@@ -40,7 +40,7 @@ img:hover{
     border-radius: 6px;
 }
 .card:hover {
-    background: url("/Img/WilliamPorto.jpg") left top no-repeat;
+    background: url("Img/WilliamPorto.jpg") left top no-repeat;
     background-size: 598px;
 }
 

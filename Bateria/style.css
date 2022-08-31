@@ -15,7 +15,7 @@ section {
     background-image: url(fundo2.jpg);
     background-size: cover;
     background-position: center center;
-    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,8 +24,8 @@ section {
 }
 
 .img-bateria {
-    width: 1000px;
-    height: 708px;
+    width: 835px;
+    height: 620px;
     background-image: url(Bateria2.png);
     background-size: cover;
     background-position: center;
@@ -41,10 +41,10 @@ section {
     color: #0c0c0c;
     font-size: calc(3vw + 13px);
     user-select: none;
-    height: 68px;
+    height: 55px;
     width: 56px;
-    margin-top: 464px;
-    margin-left: 93px;
+    margin-top: 390px;
+    margin-left: 73px;
     cursor: pointer;
 }
 
@@ -53,10 +53,10 @@ section {
     justify-content: center;
     color: #0c0c0c;
     font-size: calc(3vw + 13px);
-    height: 68px;
+    height: 55px;
     width: 56px;
-    margin-top: 427px;
-    margin-left: 155px;
+    margin-top: 337px;
+    margin-left: 119px;
     cursor: pointer;
 }
 
@@ -66,9 +66,10 @@ section {
     color: #0c0c0c;
     font-size: calc(3vw + 13px);
     user-select: none;
-    height: 68px;
+    height: 55px;
     width: 56px;
-    margin-top: 233px;
+    margin-top: 170px;
+    margin-left: -18px;
     cursor: pointer;
 }
 
@@ -77,11 +78,11 @@ section {
     justify-content: center;
     color: #0c0c0c;
     font-size: calc(3vw + 13px);
-    height: 68px;
+    height: 55px;
     width: 56px;
     user-select: none;
-    margin-top: 233px;
-    margin-left: 138px;
+    margin-top: 170px;
+    margin-left: 115px;
     cursor: pointer;
 }
 
@@ -91,10 +92,10 @@ section {
     color: #0c0c0c;
     font-size: calc(3vw + 13px);
     user-select: none;
-    height: 68px;
+    height: 55px;
     width: 56px;
-    margin-top: 423px;
-    margin-left: 140px;
+    margin-top: 344px;
+    margin-left: 110px;
     cursor: pointer;
 }
 .botaok{   
@@ -103,10 +104,10 @@ section {
     color: #0c0c0c;
     font-size: calc(3vw + 13px);
     user-select: none;
-    height: 68px;
+    height: 55px;
     width: 56px;
-    margin-top: 135px;
-    margin-left: -60px;
+    margin-top: 126px;
+    margin-left: -87px;
     cursor: pointer;
 }
 
