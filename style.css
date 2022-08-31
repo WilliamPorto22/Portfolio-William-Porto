@@ -58,6 +58,13 @@ h5 {
     justify-content: center;
 }
 
+h6{
+    font-size:24px !important;
+    margin-top: -43px !important;
+    margin-bottom: 7px !important;
+    color: #ffc107;
+}
+
 canvas {
     position: absolute;
     top: 0;
@@ -91,9 +98,9 @@ li {
 }
 
 .video-carrossel {
-    margin-top: 30px;
+    margin-top: 20px;
     width: 90%;
-    height: 500px;
+    height: 340px;
 }
 
 .texto-carrossel {
@@ -133,7 +140,7 @@ li {
     text-align: center;
 }
 .section-alinhamento h1 {
-    margin-top: 30px;
+    margin-top: 20px;
     font-family: "Josefin Sans", sans-serif;
     font-size: 5vw !important;
     margin-bottom: 0px !important;
@@ -183,7 +190,8 @@ h3.span {
 }
 
 p {
-    margin-top: 10px;
+    margin-top: 0 !important;
+    margin-bottom: 8px !important;
 }
 
 span:hover {
