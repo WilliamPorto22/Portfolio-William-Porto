@@ -26,11 +26,11 @@
     </div>
 
     <div class="nav-container">
+      <a class="nav-tab" href="#HOME">HOME</a>
       <a class="nav-tab" href="#SOBRE">SOBRE</a>
       <a class="nav-tab" href="#PROJETOS">PROJETOS</a>
       <a class="nav-tab" href="#FORMACAO">FORMAÇÃO</a>
-      <a class="nav-tab" href="#tab-typescript">TYPESCRIPT</a>
-      <a class="nav-tab" href="#HOME">HOME</a>
+      <a class="nav-tab" href="#CONTATO">CONTATO</a>
       <span class="nav-tab-slider"> </span>
     </div>
     <canvas class="background"></canvas>
@@ -314,11 +314,59 @@
     </section>
 
 
+    <section class="section-mensagem" id="CONTATO" >
 
-    <section class="section-alinhamento" id="tab-typescript">
+        <h1>Contato</h1>
+        <h2>giving you better tooling at any scale</h2>
 
-      <h1>Contato</h1>
-      <h2>giving you better tooling at any scale</h2>
+        <div class="fundo"></div>
+        <form class="container-div-conta" action="https:formsubmit.co/williamporto0@gmail.com" method="post">
+
+                <fieldset class="fieldset-1">
+                    <div class="container-contato">
+                        <label for="name"> Nome:</label>
+                        <input type="text" name="name"  id="name" autofocus required>
+                    </div>
+                    <div class="container-contato">
+                        <label for="sobrenome"> Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="sobrenome" autofocus
+                            required>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="fieldset-1">
+                    <div class="container-contato">
+                        <label for="email">E-mail:</label>    
+                        <input type="text" name="email" id="email" autofocus required>
+                    </div>
+    
+                    <div class="container-contato">
+                        <label for="number">Telefone:</label>  
+                        <input type="number"  name="number" id="number" autofocus required>
+    
+                    </div>
+                </fieldset>
+    
+                <fieldset class="fieldset-2">
+                    <div class="container-contato2">
+                        <label for="text"> Escreva seu recado:</label> 
+                        <input type="text" name="mensagem" id="mensagem" autofocus required>
+                    </div>
+                </fieldset>
+    
+                <fieldset class="fieldset-3 ">
+                    <div id="check">
+                        <input type="checkbox" required name="accept" id="accept" autofocus>
+                    </div>
+    
+                    <button type="submit" class="button-contato">Enviar</button>
+                </fieldset>
+                
+                <input type="hidden" name="_subject" value="Novo Contato!">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+        </form>
+    </section>
 
     </section>
 
