@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,9 +11,12 @@ body{
     font-family: cursive;
     height: 100vh;
     width: 100vw;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
-h1{
+h1 {
     color: yellow;
     font-size: 60px;
     display: flex;
@@ -22,53 +25,108 @@ h1{
     word-spacing: 0;
     letter-spacing: 3px;
 }
-h2{
+
+h2 {
+    margin-left: 72px;
     color: #000;
     font-size: revert;
     word-spacing: 0;
-    letter-spacing: 0;;
+    letter-spacing: 0;
+    ;
+}
+
+h3 {
+    color: #000;
+    font-size: revert;
+    word-spacing: 0;
+    letter-spacing: 0;
+    ;
+}
+
+h4 {
+    font-size: 25px;
+    margin-left: 32px;
+    color: #000;
+    word-spacing: 0;
+    letter-spacing: 0;
+}
+
+.alinhar {
+    margin-left: 40px;
 }
 
 img {
     width: 385px;
     height: 300px;
 }
-p{
+
+p {
     font-size: x-large;
     color: black;
     margin-top: 1vh;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     padding: 3px;
-    width: 390px;
-    height: 500px;
+    width: 388px;
+    height: 475px;
     border-radius: 8px;
     background-color: #cfe2e3;
     box-shadow: 4px 4px 0px 1px rgb(221 221 221 / 48%);
 }
-.containerCard{
-    
+
+.containerCard {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.card-preco{
+
+.card-preco {
     padding: 10px;
 }
 
-.preco-de{
+.preco-de {
     padding: 0px 0px;
     font-size: 20px;
     color: #ff0000;
     margin-left: 17vh;
 }
 
-.preco-por{
+.preco-por {
     padding: 0px 7px;
     font-size: 24px;
     color: #17c517;
     font-weight: bold;
+}
+
+@media(max-width:800px) {
+
+    .card {
+        margin: top 40px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+        width: 388px;
+        height: 475px;
+        border-radius: 8px;
+        background-color: #cfe2e3;
+        box-shadow: 4px 4px 0px 1px rgb(221 221 221 / 48%);
+    }
+
+    body{
+    display: block;
+    background-color: #444;
+    font-family: cursive;
+    }
+
+    .containerCard {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }

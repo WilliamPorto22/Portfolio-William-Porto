@@ -30,9 +30,9 @@ h1 {
 }
 
 img {
-    height: 590px;
-    width: auto;
-    margin-bottom: 20px;
+    height: 570px;
+    width: 750px;
+    margin-bottom: 25px;
 }
 
 @media(max-width:800px) {
