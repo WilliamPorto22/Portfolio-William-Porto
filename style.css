@@ -462,7 +462,7 @@ a {
     -webkit-animation: loading 1s ease-in-out infinite alternate;
 }
 
-.section-mensagem{
+.section-mensagem {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -525,7 +525,7 @@ a {
     align-items: center;
 }
 
-.button-contato{
+.button-contato {
     transition: all 1s ease 0s;
     margin-top: 7px;
     margin-bottom: 9px;
@@ -540,9 +540,9 @@ a {
     padding: 0px 36px 0px 36px;
 }
 
-.button-contato:hover{
+.button-contato:hover {
     background: #cedbd0;
-    color: #04460c ;
+    color: #04460c;
 }
 
 .container-contato2 {
@@ -689,6 +689,93 @@ a {
 }
 
 @media(max-width:800px) {
+
+    .container-div-conta {
+        color: #0d6efd;
+        background-color: #03dac69c;
+        border-radius: 14px;
+        margin-top: 30px;
+        padding: 19px 0px;
+        height: 380px;
+        width: 600px;
+        z-index: 1;
+    }
+
+    .container-contato input {
+        margin-left: -67px;
+    }
+
+    .container-contato2 input {
+        margin-left: 18px;
+        height: 162px;
+        width: 538px;
+    }
+
+    .container-contato label {
+        line-height: 17px;
+        left: -59px;
+    }    
+
+    .container-contato2 label {
+        left: 25px;
+    }
+
+    .img-whats {
+        height: 55px;
+        width: 55px;
+    }
+    
+    .fundo {
+        display: none;
+    }
+
+    .section-mensagem {
+        margin-top: 500px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-formacao {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .video-carrossel {
+        margin-top: 25px;
+        height: 365px;
+    }
+
+    .card-formacao {
+        height: 230px;
+    }
+
+    .a {
+        transition: all 1s ease 0s;
+        color: #000000;
+        background: #0dcaf0;
+        border-radius: 16px;
+        border: #0dcaf0;
+        margin-top: 3px;
+        height: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .sobre {
+        width: 90%;
+    }
+
+    .button-email {
+        margin-top: 48px;
+    }
+
     .sobre {
         margin: 0;
     }
