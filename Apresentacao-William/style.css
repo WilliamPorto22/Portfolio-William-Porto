@@ -474,9 +474,9 @@ span {
 }
 
 .test-forma {
+    align-items: center;
     color: #224e25;
-    width: 328px;
-    margin: 20px;
+    width: 362px;
     font-size: 20px;
 }
 
@@ -534,8 +534,8 @@ span {
 .div-flex3 {
     display: flex;
     justify-content: flex-end;
-    margin-top: -54px;
-    margin-right: 12%;
+    margin-top: -52px;
+    margin-right: 140px;
 }
 
 .grafico {
