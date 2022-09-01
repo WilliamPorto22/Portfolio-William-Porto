@@ -137,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div >
+            <div>
                 <div class="div-flex1">
                     <h6>100%</h6>
                 </div>
@@ -248,35 +248,36 @@
             <div class="title-border"></div>
         </div>
         <div class="fundo"></div>
-        <form class="container-div-conta" action="#" method="post">
+        <form class="container-div-conta" action="https:formsubmit.co/williamporto0@gmail.com" method="post">
 
             <fieldset class="fieldset-1">
                 <div class="container-contato">
-                    <label for="name"> Nome :</label>
-                    <input type="text" required name="name" id="name" autofocus>
+
+                    <input type="text" name="name" placeholder="Digite seu nome" id="name" autofocus required>
                 </div>
                 <div class="container-contato">
-                    <label for="sobrenome"> Sobrenome :</label>
-                    <input type="text" required name="sobrenome" id="sobrenome" autofocus>
+
+                    <input type="text" placeholder="Digite seu sobrenome" name="sobrenome" id="sobrenome" autofocus
+                        required>
                 </div>
             </fieldset>
 
             <fieldset class="fieldset-2">
                 <div class="container-contato">
-                    <label for="email">E-mail :</label>
-                    <input type="email" required name="email" id="email" autofocus>
+
+                    <input type="text" placeholder="Digite seu E-mail" name="email" id="email" autofocus required>
                 </div>
 
                 <div class="container-contato">
-                    <label for="number">Fone :</label>
-                    <input type="number" required name="number" id="number" autofocus>
+
+                    <input type="number" placeholder="Digite seu Fone" name="number" id="number" autofocus required>
+
                 </div>
             </fieldset>
 
             <fieldset class="fieldset-4">
                 <div class="container-contato2">
-                    <label for="mensagem">Escreva :</label>
-                    <input type="text" required name="mensagem" id="mensagem" autofocus>
+                    <input type="text" placeholder="Escreva" name="mensagem" id="mensagem" autofocus required>
                 </div>
             </fieldset>
 
@@ -285,8 +286,12 @@
                     <input type="checkbox" required name="accept" id="accept" autofocus>
                 </div>
 
-                <button class="bt-visualizar">Enviar</button>
+                <button type="submit" class="bt-visualizar">Enviar</button>
             </fieldset>
+            
+            <input type="hidden" name="_subject" value="Novo Contato!">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
         </form>
     </section>
 
