@@ -22,10 +22,9 @@ h2 {
     font-size: 20px !important;
     letter-spacing: 1px;
     font-family: "ROBOTO", sans-serif;
-    font-weight: 250 !important;
     color: #faebd7;
     z-index: 4;
-    margin-right: 20px;
+    user-select: none;
     margin-bottom: 0px !important;
 }
 
@@ -46,6 +45,7 @@ h4 {
     font-size: 30px !important;
     transition: opacity 3s;
     overflow: hidden;
+    user-select: none;
 }
 
 h5 {
@@ -54,15 +54,9 @@ h5 {
     text-align: center;
     margin-top: 20px !important;
     font-size: 30px !important;
-    color: #ffc107;
+    color: #4838a1;
+    user-select: none;
     justify-content: center;
-}
-
-h6{
-    font-size:24px !important;
-    margin-top: -43px !important;
-    margin-bottom: 7px !important;
-    color: #ffc107;
 }
 
 canvas {
@@ -78,8 +72,8 @@ canvas {
     display: flex !important;
     align-items: center;
     flex-direction: column;
-    width: 52vw;
-    margin-right: 70px;
+    width: 50%;
+    margin-right: 55px;
 }
 
 li {
@@ -98,7 +92,7 @@ li {
 }
 
 .video-carrossel {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 90%;
     height: 340px;
 }
@@ -152,6 +146,17 @@ li {
     user-select: none;
 }
 
+.p-projetos {
+    margin-top: 0;
+    line-height: 1.2;
+    font-size: 16px !important;
+    letter-spacing: 1px;
+    font-family: "ROBOTO", sans-serif;
+    color: #03dac6;
+    user-select: none;
+    z-index: 4;
+}
+
 .nav,
 .slider {
     display: flex;
@@ -190,8 +195,12 @@ h3.span {
 }
 
 p {
-    margin-top: 0 !important;
-    margin-bottom: 8px !important;
+    font-size: 20px !important;
+    margin-bottom: 10px !important;
+    font-family: "ROBOTO", sans-serif;
+    color: #faebd7 ;
+    user-select: none;
+    z-index: 4;
 }
 
 span:hover {
@@ -242,17 +251,17 @@ a {
     background: none;
     border-radius: 7px;
     border: 3px solid rgb(49, 38, 110);
-    width: 174px;
-    height: 35px;
+    width: 167px;
+    height: 38px;
     font-size: 20px;
-    padding: 0px 20px 2px;
+    padding: 0px 40px 3px;
     cursor: pointer;
 }
 
 .a:hover {
     color: #1e1f26;
     background: #03dac6;
-    border: none;
+    border-color: #03dac6;
 }
 
 .a-button {
@@ -326,14 +335,13 @@ a {
 }
 
 .card {
+    margin-top: 20px;
     background: url(img/WilliamPorto.jpg) center center no-repeat;
     background-size: 365px;
     width: 290px;
     height: var(--card-height) !important;
     position: relative;
     transition: 0.8s;
-    border-radius: 6px;
-    margin-bottom: 80px;
 }
 
 .card:hover {
@@ -415,7 +423,7 @@ a {
 }
 
 .borda-formacao{
-    background-color: rgb(65 181 72);
+    background-color: #508fed;
     height: 3px;
     width: 50px;
     margin-left: auto;
@@ -425,13 +433,13 @@ a {
 
 .formacao-itens-text{
     color: #03dac6;
-    width: 310px;
-    font-size: 20px;
+    width: 320px;
+    user-select: none;
 }
 
 .fa {
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 0.6s;
 }
 
 .icons {
