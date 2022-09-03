@@ -40,7 +40,7 @@ img:hover{
     border-radius: 6px;
 }
 .card:hover {
-    background: url("Img/WilliamPorto.jpg") left top no-repeat;
+    background: url(Img/WilliamPorto.jpg) left top no-repeat;
     background-size: 598px;
 }
 
