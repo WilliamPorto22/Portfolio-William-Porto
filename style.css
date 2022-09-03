@@ -807,6 +807,25 @@ a {
     }
 }
 
+@media(max-width:425px) {
+
+    p{
+        font-size: 12px!important;
+    }
+    .container-div-conta {
+        width: 290px;
+    }
+
+    .container-contato input {
+        height: 40px;
+        border: none;
+        background-color: hwb(205deg 74% 24% / 76%);
+        border-radius: 4px;
+        color: #084298;
+        margin-bottom: 20px;
+    }
+}
+
 @-webkit-keyframes loading {
     to {
         text-shadow: 20px 0 70px #7802ff;
