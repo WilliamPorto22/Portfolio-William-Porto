@@ -693,6 +693,7 @@ a {
     .section-alinhamento h1 {
         margin-top: 100px;
     }
+
     .container-div-conta {
         color: #0d6efd;
         background-color: #03dac69c;
@@ -717,7 +718,7 @@ a {
     .container-contato label {
         line-height: 17px;
         left: -59px;
-    }    
+    }
 
     .container-contato2 label {
         left: 25px;
@@ -727,7 +728,7 @@ a {
         height: 55px;
         width: 55px;
     }
-    
+
     .fundo {
         display: none;
     }
@@ -809,20 +810,62 @@ a {
 
 @media(max-width:425px) {
 
-    p{
-        font-size: 12px!important;
+    p {
+        font-size: 12px !important;
     }
+
+
+    .nav-tab {
+        font-size: 12px;
+    }
+
     .container-div-conta {
         width: 290px;
     }
 
     .container-contato input {
         height: 40px;
-        border: none;
-        background-color: hwb(205deg 74% 24% / 76%);
-        border-radius: 4px;
-        color: #084298;
-        margin-bottom: 20px;
+        font-size: 9px;
+    }
+
+    .container-contato label {
+        line-height: 15px;
+        left: -56px;
+    }
+
+    .container-contato {
+        position: relative;
+        margin-left: 73px;
+        font-size: 12px;
+    }
+
+
+    .container-contato2 input {
+        margin-left: -3px;
+        height: 162px;
+        width: 276px;
+    }
+
+    .container-contato2 label {
+        left: 3px;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 13px !important;
+        width: 96%;
+    }
+
+    .img-whats {
+        margin-right: -25px;
+        height: 30px;
+        width: 32px;
+    }
+
+    .img-whats:hover {
+        margin-right: -25px;
+        height: 32px;
+        width: 34px;
     }
 }
 
