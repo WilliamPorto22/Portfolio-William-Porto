@@ -147,6 +147,7 @@ li {
     user-select: none;
 }
 
+
 .p-projetos {
     margin-top: 0;
     line-height: 1.2;
@@ -814,9 +815,27 @@ a {
         font-size: 12px !important;
     }
 
-
     .nav-tab {
         font-size: 12px;
+        letter-spacing: 0.0rem;
+    }
+    .section-alinhamento h1 {
+        margin-top: 18px;
+    }
+
+    .section-alinhamento {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .nav-container {
+        display: flex;
+        height: 55px;
+        box-shadow: 4px 10px 43px rgb(0 0 0 / 50%);
+    }
+
+    .nav-tab-slider {
+        height: 4px;
     }
 
     .container-div-conta {
