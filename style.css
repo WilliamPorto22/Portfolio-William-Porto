@@ -810,15 +810,10 @@ a {
 
 @media(max-width:425px) {
 
-
     .section-mensagem {
         margin-top: 329px;
     } 
-
-    .d-none {
-        display: block !important;
-    }
-
+    
     .video-carrossel {
         margin-top: 30px;
         height: 300px;
