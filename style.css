@@ -810,6 +810,11 @@ a {
 
 @media(max-width:425px) {
 
+
+    .section-mensagem {
+        margin-top: 329px;
+    } 
+
     .d-none {
         display: block !important;
     }
@@ -839,7 +844,7 @@ a {
     }
 
     .card-formacao {
-        margin: 0px; 
+        margin: 0px;
     }
 
     .nav-container {
@@ -862,16 +867,15 @@ a {
     }
 
     .container-contato label {
-        line-height: 15px;
-        left: -56px;
+        line-height: 14px;
+        left: -61px;
     }
 
     .container-contato {
         position: relative;
+        font-size: 10px;
         margin-left: 73px;
-        font-size: 12px;
     }
-
 
     .container-contato2 input {
         margin-left: -3px;
@@ -880,25 +884,24 @@ a {
     }
 
     .container-contato2 label {
-        left: 3px;
-        font-size: 12px;
+        left: 2px;
+        font-size: 10px;
     }
 
     h2 {
         font-size: 13px !important;
-        width: 96%;
     }
 
     .img-whats {
-        margin-right: -25px;
-        height: 30px;
-        width: 32px;
+        margin-right: -18px;
+        height: 35px;
+        width: 35px;
     }
 
     .img-whats:hover {
-        margin-right: -25px;
-        height: 32px;
-        width: 34px;
+        margin-right: -19px;
+        height: 36px;
+        width: 36px;
     }
 }
 
