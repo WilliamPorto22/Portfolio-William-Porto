@@ -796,7 +796,6 @@ a {
     .nav h1,
     .slider h1 {
         font-size: 4vw;
-
     }
 
     .nav h2,
@@ -811,6 +810,16 @@ a {
 
 @media(max-width:425px) {
 
+    .d-none {
+        display: block !important;
+    }
+
+    .video-carrossel {
+        margin-top: 30px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
     p {
         font-size: 12px !important;
     }
@@ -819,13 +828,18 @@ a {
         font-size: 12px;
         letter-spacing: 0.0rem;
     }
+
     .section-alinhamento h1 {
         margin-top: 18px;
     }
 
     .section-alinhamento {
-        margin-top: 0px;
-        margin-bottom: 0px;
+        margin-top: 10px;
+        margin-bottom: 85px !important;
+    }
+
+    .card-formacao {
+        margin: 0px; 
     }
 
     .nav-container {
@@ -870,7 +884,7 @@ a {
         font-size: 12px;
     }
 
-    h2{
+    h2 {
         font-size: 13px !important;
         width: 96%;
     }
