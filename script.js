@@ -113,3 +113,11 @@ class NavigationPage {
     }
 }
 new NavigationPage();
+
+
+// let fabricando = document.querySelector('#fabricando').value;
+// window.alert(' Desculpe estamos em Fabricação!');
+
+// function fabricando(){
+//     fabricando.classList.add ('active')
+// }

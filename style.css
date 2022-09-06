@@ -451,6 +451,67 @@ a {
     justify-content: space-around;
 }
 
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1e1f26e3;
+    border-radius: 14px;
+    padding: 50px 30px;
+    align-items: center;
+}
+
+.div-inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.input-form{
+    height: 45px;
+    border: none;
+    background-color: hwb(205deg 74% 24% / 76%);
+    border-radius: 4px;
+    color: #084298;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 9px 0px 9px;
+    user-select: none;
+    outline: none;
+    margin-bottom: 20px;
+    width: 45%;
+}
+
+.input-form-recado{
+    height: 164px;
+    background-color: hwb(205deg 74% 24% / 76%);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #084298;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.btn-form{
+    transition: all 1s ease 0s;
+    margin-top: 15px;
+    margin-bottom: 9px;
+    margin-left: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #2ea73c;
+    border-radius: 13px;
+    border: none;
+    font-size: 18px;
+    padding: 5px 36px 5px 36px;
+    cursor: pointer;
+}
+
+
 .loader span {
     color: #faebd7;
     text-shadow: 0 0 0 #faebd7;
@@ -543,6 +604,18 @@ a {
 
 @media(max-width:800px) {
 
+    .div-inputs{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .input-form{
+        width: auto;
+    }
+
+    .descricao-contato{
+        text-align: center;
+    }
 
     p {
         font-size: 12px !important;
@@ -643,14 +716,11 @@ a {
 
     .sobre {
         width: 77%;
+        margin: 0;
     }
 
     .button-email {
         margin-top: 48px;
-    }
-
-    .sobre {
-        margin: 0;
     }
 
     .sobre2 {
