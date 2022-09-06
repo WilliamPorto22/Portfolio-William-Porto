@@ -132,6 +132,8 @@ li {
     flex-direction: column;
     position: relative;
     text-align: center;
+    align-content: center;
+    align-items: center;
 }
 
 .section-alinhamento h1 {
@@ -454,10 +456,15 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: #1e1f26e3;
-    border-radius: 14px;
-    padding: 50px 30px;
     align-items: center;
+    color: rgb(172 198 217 / 15%);
+    background-color: #868d91bd;
+    border-radius: 14px;
+    padding: 30px 0px;
+    box-shadow: 5px 5px 8px;
+    width: 585px;
+    z-index: 1;
+    margin: 25px 110px 20px 110px;
 }
 
 .div-inputs{
@@ -602,6 +609,11 @@ a {
 }
 
 @media(max-width:800px) {
+
+    .form{
+        width: 310px;
+        padding: 30px 20px;
+    }
 
     .div-inputs{
         width: 100%;
