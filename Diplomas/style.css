@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,10 +37,15 @@ img {
 
 @media(max-width:800px) {
 
-    img { 
-        height: 460px;
-        width: auto;
+    img {
+        height: 230px;
+        width: 310px;
     }
 
+    h1 {
+        font-size: 22px !important;
+        color: #3bc2c2;
+        margin-bottom: 18px;
+    }
 
 }
