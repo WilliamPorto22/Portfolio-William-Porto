@@ -467,7 +467,7 @@ a {
     margin: 60px 110px 20px 110px;
 }
 
-.div-inputs{
+.div-inputs {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -475,7 +475,7 @@ a {
     justify-content: space-between;
 }
 
-.input-form{
+.input-form {
     height: 37px;
     border: none;
     background-color: hwb(205deg 74% 24% / 76%);
@@ -491,7 +491,7 @@ a {
     margin-top: 10px;
 }
 
-.input-form-recado{
+.input-form-recado {
     height: 140px;
     background-color: hwb(205deg 74% 24% / 76%);
     border: none;
@@ -499,12 +499,13 @@ a {
     border-radius: 4px;
     color: #084298;
     font-size: 18px;
+    padding: 4px 9px 0px 9px;
     font-weight: 700;
     width: 100%;
     margin-top: 6px;
 }
 
-.btn-form{
+.btn-form {
     transition: all 1s ease 0s;
     margin-top: 20px;
     margin-bottom: 9px;
@@ -622,21 +623,30 @@ a {
 
 @media(max-width:800px) {
 
-    .form{
+    .form {
         width: 310px;
         padding: 30px 20px;
     }
 
-    .div-inputs{
+    .div-inputs {
         width: 100%;
         flex-direction: column;
     }
 
-    .input-form{
+    .input-form {
         width: auto;
+        height: 28px;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-top: 8px;
     }
 
-    .descricao-contato{
+    .input-form-recado {
+        font-size: 15px;
+        height: 110px;
+    }
+
+    .descricao-contato {
         text-align: center;
     }
 
@@ -712,7 +722,7 @@ a {
         align-content: center;
         flex-direction: column;
     }
-    
+
     .video-carrossel {
         margin-top: 30px;
         height: 300px;
@@ -794,7 +804,7 @@ a {
         font-size: 9px;
         margin-left: 80px;
     }
-    
+
     .fieldset-1 {
         display: flex;
         justify-content: center;
