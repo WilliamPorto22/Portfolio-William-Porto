@@ -452,7 +452,7 @@ a {
     justify-content: space-around;
 }
 
-.form{
+.form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -460,11 +460,11 @@ a {
     color: rgb(172 198 217 / 15%);
     background-color: #868d91bd;
     border-radius: 14px;
-    padding: 30px 0px;
     box-shadow: 5px 5px 8px;
-    width: 585px;
+    width: 680px;
+    height: 340px;
     z-index: 1;
-    margin: 25px 110px 20px 110px;
+    margin: 60px 110px 20px 110px;
 }
 
 .div-inputs{
@@ -476,7 +476,7 @@ a {
 }
 
 .input-form{
-    height: 45px;
+    height: 37px;
     border: none;
     background-color: hwb(205deg 74% 24% / 76%);
     border-radius: 4px;
@@ -486,12 +486,13 @@ a {
     padding: 4px 9px 0px 9px;
     user-select: none;
     outline: none;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     width: 45%;
+    margin-top: 10px;
 }
 
 .input-form-recado{
-    height: 164px;
+    height: 140px;
     background-color: hwb(205deg 74% 24% / 76%);
     border: none;
     outline: none;
@@ -500,11 +501,12 @@ a {
     font-size: 18px;
     font-weight: 700;
     width: 100%;
+    margin-top: 6px;
 }
 
 .btn-form{
     transition: all 1s ease 0s;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 9px;
     margin-left: 30px;
     font-weight: 600;
@@ -513,10 +515,20 @@ a {
     border-radius: 13px;
     border: none;
     font-size: 18px;
-    padding: 5px 36px 5px 36px;
-    cursor: pointer;
+    padding: 3px 36px 2px 36px;
 }
 
+.fundo {
+    background-color: #00abd6;
+    margin: 165px 0px 17px 0px;
+    width: 740px;
+    height: 395px;
+    border-radius: 10px;
+    box-shadow: 3px 6px 10px;
+    transform: skew(6deg, 2deg);
+    position: absolute;
+    z-index: 0;
+}
 
 .loader span {
     color: #faebd7;

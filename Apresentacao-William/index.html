@@ -50,7 +50,7 @@
         </div>
     </section>
 
-    <section id="sobre">
+    <section class="section-sobre2" id="sobre">
         <h2>Sobre</h2>
         <div class="title-border"></div>
         <div class="section-sobre">
@@ -63,7 +63,8 @@
             <div>
                 <img src="imag/w.png " class="img-responsive img-thumbnail img-perfil">
             </div>
-            <button class="bt-experiencia margen-top" onclick="openModal()">Experiencia</button>
+        </div>
+        <button class="bt-experiencia" onclick="openModal()">Experiencia</button>
             <div class="modal-container">
                 <div class="modal">
                     <h3>Experiencia</h3>
@@ -74,10 +75,8 @@
                         <button class="btnOk" onclick="closeModal()">OK</button>
                         <button class="btnClose" onclick="closeModal()">Close</button>
                     </div>
-
                 </div>
             </div>
-        </div>
     </section>
 
     <section id="skills">
@@ -240,59 +239,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="contato" class="section-mensagem">
-        <div>
-            <h3>Contato</h3>
-            <div class="title-border"></div>
-        </div>
-        <div class="fundo"></div>
-        <form class="container-div-conta" action="https:formsubmit.co/williamporto0@gmail.com" method="post">
-
-                <fieldset class="fieldset-1">
-                    <div class="container-contato">
-                        <label > Nome :</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="container-contato">
-                        <label> Sobrenome :</label>
-                        <input type="text" required>
-                    </div>
-                </fieldset>
-    
-                <fieldset class="fieldset-2">
-                    <div class="container-contato">
-                        <label> Seu E-mail :</label>    
-                        <input type="text" required>
-                    </div>
-    
-                    <div class="container-contato">
-                        <label > Seu Telefone :</label>  
-                        <input type="number" required>
-    
-                    </div>
-                </fieldset>
-    
-                <fieldset class="fieldset-4">
-                    <div class="container-contato2">
-                        <label> Escreva seu recado:</label> 
-                        <input type="text" required>
-                    </div>
-                </fieldset>
-    
-                <fieldset class="fieldset-5 ">
-                    <div >
-                        <input type="checkbox" required>
-                    </div>
-    
-                    <button type="submit" class="bt-visualizar">Enviar</button>
-                </fieldset>
-                
-                <input type="hidden" name="_subject" value="Novo Contato!">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-        </form>
     </section>
 
     <p class="end"><a href="#nave">© Desenvolvido por William Porto </a></p>
