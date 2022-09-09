@@ -71,7 +71,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin-top: -2px;
+    margin-top: 22px;
 }
 
 h4 {
@@ -596,9 +596,10 @@ circle:nth-child(2) {
 
 .end {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding: 12px;
     display: flex;
     justify-content: center;
+    margin-bottom: 16px;
+    margin-top: -18px;
 }
 
 .end a {
@@ -770,14 +771,13 @@ fieldset {
     background-color: #00abd6;
     border: none;
     cursor: pointer;
-
 }
 
 .fundo {
     background-color: #00abd6;
-    margin: 74px 0px 75px 0px;
-    width: 850px;
-    height: 557px;
+    margin: 143px 0px 17px 0px;
+    width: 736px;
+    height: 367px;
     border-radius: 10px;
     box-shadow: 3px 6px 10px;
     transform: skew(6deg, 2deg);
@@ -785,7 +785,134 @@ fieldset {
     z-index: 0;
 }
 
+.section-alinhamento {
+    background-color: #031f32;
+    height: 90vh;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(172 198 217 / 15%);
+    background-color: #868d91bd;
+    border-radius: 14px;
+    box-shadow: 5px 5px 8px;
+    width: 678px;
+    height: 335px;
+    z-index: 1;
+    margin: 36px 100px 0px 100px;
+}
+
+.div-inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.input-form {
+    height: 37px;
+    border: none;
+    background-color: hwb(205deg 74% 24% / 76%);
+    border-radius: 4px;
+    color: #084298;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 9px 0px 9px;
+    user-select: none;
+    outline: none;
+    margin-bottom: 7px;
+    width: 45%;
+    margin-top: 10px;
+}
+
+.input-form-recado {
+    height: 140px;
+    background-color: hwb(205deg 74% 24% / 76%);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #084298;
+    font-size: 18px;
+    padding: 4px 9px 0px 9px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 6px;
+}
+
+.btn-form {
+    transition: all 1s ease 0s;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    margin-left: 30px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #2ea73c;
+    border-radius: 13px;
+    border: none;
+    font-size: 18px;
+    padding: 3px 36px 2px 36px;
+}
+
+.h22 {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    color: #ffffff;
+}
+
 @media(max-width:800px) {
+
+    .h22 {
+        font-size: 9px;
+    }
+
+    .btn-form {
+        margin-left: 0px;
+        font-size: 16px;
+    }
+
+    .input-form {
+        width: auto;
+        height: 28px;
+        font-size: 15px;
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+
+    .input-form-recado {
+        font-size: 15px;
+        height: 110px;
+    }
+
+    .div-inputs {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .form {
+        width: 310px;
+        padding: 30px 20px;
+    }
+
+    .fundo {
+        display: none;
+    }
+
+    .section-alinhamento {
+        margin-top: 40px;
+        margin-bottom: 0px !important;
+        height: 78vh;
+    }
 
     .section-sobre {
         display: flex;
@@ -799,7 +926,7 @@ fieldset {
         font-size: 16px;
         line-height: 28px;
         width: 92%;
-        padding: 46px;
+        padding: 22px;
     }
 
     .nome-ini-w {
@@ -820,8 +947,8 @@ fieldset {
     }
 
     h1 {
-            font-size: 30px;
-            margin: 0px 76px 17px;
+        font-size: 30px;
+        margin: 0px 76px 17px;
     }
 
     h2 {
@@ -830,12 +957,23 @@ fieldset {
         margin-bottom: 3px;
     }
 
+    h3 {
+        font-size: 27px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    h4 {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
     h5 {
         margin-top: 10px;
         font-size: 17px;
     }
 
-    p{
+    p {
         font-size: 13px;
     }
 
@@ -844,7 +982,7 @@ fieldset {
         width: 18%;
         font-size: 12px;
         margin: 11px 136px;
-    }    
+    }
 
     .test-forma {
         align-items: center;
@@ -871,12 +1009,12 @@ fieldset {
         margin-top: 80px;
     }
 
-    .title-border{
-        margin-bottom: 120px;
+    .title-border {
+        margin-bottom: 110px;
     }
-    
+
     .title-border3 {
-        margin-bottom: 67px;
+        margin-bottom: 33px;
     }
 
     .title-border-2 {
@@ -890,12 +1028,12 @@ fieldset {
     .texto-card {
         height: 170px;
         margin-bottom: 10px;
-    }   
+    }
 
     .bt-visualizar {
         height: 4%;
         font-size: 15px;
-        width: 96px;    
+        width: 96px;
     }
 
     .card-for {
