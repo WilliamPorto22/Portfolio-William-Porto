@@ -740,10 +740,12 @@ a {
         background: #0dcaf0;
         border-radius: 16px;
         border: #0dcaf0;
-        margin-top: 3px;
-        height: 30px;
+        margin-top: 5px;
+        height: 21px;
+        width: 98px;
+        padding: 0px 19px 0px;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 15px;
         cursor: pointer;
     }
 
@@ -787,6 +789,12 @@ a {
 
     h5 {
         font-size: 18px !important;
+        margin-top: 73px !important;
+    }
+
+    h2 {
+        font-size: 12px !important;
+        padding: 15px;
     }
 
     .nav-container {
@@ -810,8 +818,9 @@ a {
         justify-content: center;
     }
 
-    .texto-carrossel {
-        margin-bottom: 45px;
+    .btn-form {
+        margin-left: 0px; 
+        font-size: 16px;
     }
 }
 
