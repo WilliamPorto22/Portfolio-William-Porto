@@ -796,8 +796,6 @@ fieldset {
     }
 
     .section2 {
-        margin-left: 55px;
-        color: #224e25;
         font-size: 16px;
         line-height: 28px;
         width: 92%;
@@ -805,12 +803,16 @@ fieldset {
     }
 
     .nome-ini-w {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .nav-bt {
-        padding: 12px 9px;
-        font-size: 12px;
+        padding: 6px 5px;
+        font-size: 8px;
+    }
+
+    .nav-bt:hover {
+        padding: 7px 6px;
     }
 
     .inicio-fundo {
@@ -818,19 +820,45 @@ fieldset {
     }
 
     h1 {
-        font-size: 48px;
-        margin: 0px 76px 24px;
+            font-size: 30px;
+            margin: 0px 76px 17px;
+    }
+
+    h2 {
+        font-size: 27px;
+        margin-top: 15px;
+        margin-bottom: 3px;
+    }
+
+    h5 {
+        margin-top: 10px;
+        font-size: 17px;
+    }
+
+    p{
+        font-size: 13px;
     }
 
     .bt-contato {
-        padding: 4px;
-        width: 29%;
+        padding: 1px;
+        width: 18%;
+        font-size: 12px;
+        margin: 11px 136px;
+    }    
+
+    .test-forma {
+        align-items: center;
+        color: #224e25;
+        width: 259px;
         font-size: 14px;
-        margin: 12px 156px;
+    }
+
+    .img-perfil {
+        max-width: 230px;
     }
 
     .section-skills {
-        height: 82vh;
+        height: 135vh;
         display: flex;
         flex-direction: column;
     }
@@ -848,7 +876,7 @@ fieldset {
     }
     
     .title-border3 {
-        margin-bottom: 10px;
+        margin-bottom: 67px;
     }
 
     .title-border-2 {
@@ -859,21 +887,28 @@ fieldset {
         flex-direction: column;
     }
 
-    h5 {
-        margin-top: 10px;
-    }
-
     .texto-card {
-        height: 229px;
-        margin-bottom: 13px;
+        height: 170px;
+        margin-bottom: 10px;
     }   
 
     .bt-visualizar {
-        height: 3%;
-        font-size: 15px;    
+        height: 4%;
+        font-size: 15px;
+        width: 96px;    
     }
 
     .card-for {
         margin: 15px;
+    }
+
+    .end a {
+        font-size: 15px;
+        margin-top: 30px;
+        z-index: 999;
+    }
+
+    .img-whats {
+        height: 50px;
     }
 }
