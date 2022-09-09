@@ -355,6 +355,14 @@ span {
     margin-bottom: 55px;
 }
 
+.title-border3 {
+    background-color: #41b548;
+    height: 4px;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .forma-border {
     background-color: rgb(65 181 72);
     height: 3px;
@@ -828,10 +836,44 @@ fieldset {
     }
 
     .col {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 5%;
         flex-direction: column;
-        align-items: center;
+    }
+
+    .col-sm-1 {
+        margin-top: 80px;
+    }
+
+    .title-border{
+        margin-bottom: 120px;
+    }
+    
+    .title-border3 {
+        margin-bottom: 10px;
+    }
+
+    .title-border-2 {
+        margin-bottom: 18px;
+    }
+
+    .section-for {
+        flex-direction: column;
+    }
+
+    h5 {
+        margin-top: 10px;
+    }
+
+    .texto-card {
+        height: 229px;
+        margin-bottom: 13px;
+    }   
+
+    .bt-visualizar {
+        height: 3%;
+        font-size: 15px;    
+    }
+
+    .card-for {
+        margin: 15px;
     }
 }
