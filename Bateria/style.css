@@ -4,8 +4,8 @@ body {
 
 h1 {
     display: flex;
-    margin-top: 10px;
-    font-size: 52px;
+    margin-top: 2px;
+    font-size: 58px;
     color: rgb(247, 238, 238);
     justify-content: center;
     align-items: flex-start;
@@ -16,6 +16,7 @@ section {
     background-size: cover;
     background-position: center center;
     display: flex;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -54,8 +55,8 @@ section {
     font-size: calc(3vw + 13px);
     height: 55px;
     width: 56px;
-    margin-top: 337px;
-    margin-left: 119px;
+    margin-top: 333px;
+    margin-left: 137px;
     cursor: pointer;
 }
 
@@ -67,8 +68,7 @@ section {
     user-select: none;
     height: 55px;
     width: 56px;
-    margin-top: 170px;
-    margin-left: -18px;
+    margin-top: 174px;
     cursor: pointer;
 }
 
@@ -81,7 +81,7 @@ section {
     width: 56px;
     user-select: none;
     margin-top: 170px;
-    margin-left: 115px;
+    margin-left: 126px;
     cursor: pointer;
 }
 
@@ -93,8 +93,9 @@ section {
     user-select: none;
     height: 55px;
     width: 56px;
-    margin-top: 344px;
-    margin-left: 110px;
+    margin-top: -98px;
+    margin-bottom: 301px;
+    margin-left: 288px;
     cursor: pointer;
 }
 
@@ -106,8 +107,8 @@ section {
     user-select: none;
     height: 55px;
     width: 56px;
-    margin-top: 126px;
-    margin-left: -87px;
+    margin-top: -155px;
+    margin-left: 300px;
     cursor: pointer;
 }
 
@@ -121,7 +122,7 @@ section {
 @media(max-width:800px) {
 
     h1 {
-        font-size: 22px;
+        font-size: 35px;
     }
 
     .img-bateria {
@@ -132,35 +133,48 @@ section {
     .botaoa {
         margin-top: 125px;
         margin-left: 18px;
+        height: 27px;
     }
 
     .botaos {
         margin-top: 115px;
-        margin-left: -12px;
+        margin-left: 49px;
+        height: 27px;
     }
 
     .botaod {
         margin-top: 63px;
-        margin-left: -36px;
+        margin-left: 3px;
+        margin-right: 19px;
+        height: 27px;
     }
 
     .botaoh {
         margin-top: 62px;
         margin-left: -3px;
+        height: 27px;
+        width: 23px;
     }
 
     .botaoj {
-        margin-top: 53px;
-        margin-left: -2px;
+        margin-top: -33px;
+        margin-left: 71px;
+        height: 27px;
+        width: 23px;
     }
 
     .botaoh {
-        margin-top: 114px;
-        margin-left: 112px;
+        margin-top: 63px;
+        margin-left: 17px;
+        margin-right: 82px;
+        height: 27px;
+        width: 23px;
     }
 
     .botaok {
-        margin-top: 118px;
-        margin-left: -53px;
+        margin-top: -266px;
+        margin-left: 74px;
+        height: 27px;
+        width: 23px;
     }
 }
