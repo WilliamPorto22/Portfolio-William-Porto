@@ -27,7 +27,7 @@ h1 {
     margin-top: 0px;
 }
 
-label{
+label {
     color: rgb(255, 255, 255);
     font: 1.9rem "Amatic SC", sans-serif;
     display: flex;
@@ -37,7 +37,7 @@ label{
     cursor: pointer;
 }
 
-input{
+input {
     display: flex;
     text-align: center;
     background-color: green;
@@ -51,7 +51,7 @@ input{
     width: 213px;
 }
 
-button{
+button {
     transition: all 1.2s ease 0s;
     width: 13%;
     height: 5%;
@@ -68,7 +68,7 @@ button{
 }
 
 button:hover {
-    font-weight: bolder; 
+    font-weight: bolder;
     color: #112344;
     background-color: #6be923;
     border: 1px solid #112344;
@@ -85,7 +85,7 @@ button:hover {
     flex-direction: column;
 }
 
-.input{
+.input {
     display: flex;
     align-items: center;
     justify-items: center;
@@ -93,7 +93,7 @@ button:hover {
     margin-right: 40px;
 }
 
-.resultado{
+.resultado {
     display: flex;
     margin-top: 77px;
     align-items: center;
@@ -120,4 +120,45 @@ button:hover {
     display: flex;
     margin-top: -3px;
     justify-content: center;
+}
+
+@media(max-width:800px) {
+    h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 484px;
+        width: 283px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        height: 460px;
+        width: 283px;
+    }
+
+    input {
+        height: 33px;
+        width: 168px;
+        margin-right: -60px;
+        font-size: 18px;
+    }
+
+    button {
+        width: 80px;
+        height: 24px;
+        font-size: 18px;
+    }
+
+    .resultado {
+        width: 259px;
+    }
+
+    .end {
+        font-size: 16px;
+    }
 }
