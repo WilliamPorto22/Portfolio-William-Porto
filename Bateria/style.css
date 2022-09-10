@@ -15,7 +15,6 @@ section {
     background-image: url(fundo2.jpg);
     background-size: cover;
     background-position: center center;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,7 +32,6 @@ section {
 
 .container {
     display: flex;
-    gap: 15px;
 }
 
 .botaoa {
@@ -122,6 +120,47 @@ section {
 
 @media(max-width:800px) {
 
+    h1 {
+        font-size: 22px;
+    }
 
+    .img-bateria {
+        width: 257px;
+        height: 199px;
+    }
 
+    .botaoa {
+        margin-top: 125px;
+        margin-left: 18px;
+    }
+
+    .botaos {
+        margin-top: 115px;
+        margin-left: -12px;
+    }
+
+    .botaod {
+        margin-top: 63px;
+        margin-left: -36px;
+    }
+
+    .botaoh {
+        margin-top: 62px;
+        margin-left: -3px;
+    }
+
+    .botaoj {
+        margin-top: 53px;
+        margin-left: -2px;
+    }
+
+    .botaoh {
+        margin-top: 114px;
+        margin-left: 112px;
+    }
+
+    .botaok {
+        margin-top: 118px;
+        margin-left: -53px;
+    }
 }
