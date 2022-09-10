@@ -121,3 +121,7 @@ new NavigationPage();
 // function fabricando(){
 //     fabricando.classList.add ('active')
 // }
+
+function fabricando() {
+    alert("Em Fabricação!")
+}
