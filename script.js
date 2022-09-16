@@ -115,13 +115,10 @@ class NavigationPage {
 new NavigationPage();
 
 
-// let fabricando = document.querySelector('#fabricando').value;
-// window.alert(' Desculpe estamos em Fabricação!');
 
-// function fabricando(){
-//     fabricando.classList.add ('active')
-// }
 
-function fabricando() {
-    alert("Em Fabricação!")
+// alert 
+
+function emfabricacao() {
+    alert("Esta em Fabricação");
 }
