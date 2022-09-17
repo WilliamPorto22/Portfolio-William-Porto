@@ -13,11 +13,6 @@ img {
     width: 28px;
 }
 
-img:hover {
-    width: 33px;
-    transition: 0.5s;
-}
-
 h2 {
     font-size: 20px !important;
     letter-spacing: 1px;
@@ -215,11 +210,6 @@ video {
     transition: all 1.2s ease 0s;
     width: 100%;
     border-radius: 10px;
-}
-
-video:hover {
-    border-radius: 7px;
-    width: 98%;
 }
 
 .whats {
@@ -512,10 +502,6 @@ a {
     margin-bottom: 10px;
 }
 
-.img-carrossel:hover {
-    width: 600px;
-}
-
 .btn-form {
     transition: all 1s ease 0s;
     margin-top: 20px;
@@ -717,8 +703,10 @@ a {
 
     .img-whats {
         margin-right: -18px;
-        height: 35px;
-        width: 35px;
+        margin-top: 20px;
+        height: 70px;
+        width: 70px;
+        pointer-events: none;
     }
 
     .fundo {
