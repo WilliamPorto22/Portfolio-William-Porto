@@ -9,6 +9,7 @@ const particles = Particles.init({
     connectParticles: true,
     responsive: [
         {
+            breakpoint: 600,
             options: {
                 color: ["#faebd7", "#03dac6", "#7802ff;"],
                 maxParticles: 43,
@@ -24,7 +25,7 @@ class NavigationPage {
         this.lastScroll = 0;
         let self = this;
         $(".nav-tab").click(function () {
-            self.onTabClick(event, $(this));
+            self.onTabClick( $(this));
         });
         $(window).scroll(() => {
             this.onScroll();
@@ -37,7 +38,7 @@ class NavigationPage {
         event.preventDefault();
         let scrollTop =
             $(element.attr("href")).offset().top - this.tabContainerHeight + 1;
-        $("html, body").animate({ scrollTop: scrollTop }, 10);
+        $("html, body").animate({ scrollTop: scrollTop }, 600);
     }
     onScroll() {
         this.checkHeaderPosition();
