@@ -9,8 +9,13 @@ body {
     background-color: #1e1f26 !important;
 }
 
-img {
+.img-icon-card {
     width: 28px;
+    transition: 0.5s;
+}
+
+.img-icon-card:hover {
+    width: 33px;
 }
 
 h2 {
@@ -428,6 +433,7 @@ a {
     transition: opacity 0.6s;
 }
 
+
 .icons {
     position: absolute;
     fill: #000;
@@ -518,9 +524,9 @@ a {
 
 .fundo {
     background-color: #00abd6;
-    margin: 165px 0px 17px 0px;
+    margin: 220px 0px 17px 0px;
     width: 740px;
-    height: 395px;
+    height: 370px;
     border-radius: 10px;
     box-shadow: 3px 6px 10px;
     transform: skew(6deg, 2deg);
